@@ -1,0 +1,481 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html ng-app="nuWeb" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html ng-app="nuWeb" class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html ng-app="nuWeb" class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!--><html ng-app="nuWeb" class="wf-ffdaxwebpro-n3-active wf-ffdaxwebpro-n4-active wf-ffdaxwebpro-n7-active wf-ocrastd-n4-active wf-active js no-flexbox flexboxlegacy canvas canvastext no-webgl touch no-geolocation postmessage websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface generatedcontent no-video no-audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths ng-scope"><!--<![endif]--><head><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}</style><style></style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title page-title="">Faturas - Nubank</title>
+    <meta name="description" content="nubank">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    <link rel="stylesheet" href="styles/7821c6fd.nu.css">
+
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6952912/640924/css/fonts.css">
+
+    <script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js" style=""></script><script src="//use.typekit.net/ksz1bpt.js" async=""></script><script type="text/javascript">
+      (function(d) {
+        var config = {
+                  kitId: 'ksz1bpt',
+                  scriptTimeout: 3000
+                },
+                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script><style type="text/css">.tk-ocr-a-std{font-family:"ocr-a-std",sans-serif;}</style><link rel="stylesheet" href="https://use.typekit.net/c/cb83b7/1w;ff-dax-web-pro,2,Tn9:P:n3,Vbx:P:n4,Vbz:P:n7;ocr-a-std,2,XcX:P:n4/d?3bb2a6e53c9684ffdc9a9bf5195b2a620ddcd3046f58c4dc11010739196ad045e472fc3a0fbe433ee6baae8ad143ae99e589027c4d6982686a75361bd88a59c241a56a924561c62c03fd6c77b0f978b8fb60641c68238769be1d06e3fed3cb04a2482ff6461076a357f5c2a1460d657a64176eb1d5b9ffb160950391fcbc36f7b8be2ac921">
+  <meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"><script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/19/9/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/19/9/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/19/9/stats.js"></script><script src="js/vendor/f7658974.jMinEmoji.js" async=""></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttps%3A%2F%2Fconta.nubank.com.br%2F%23%2Flogin&amp;5e1&amp;callback=_xdc_._bjgo2l&amp;token=89435"></script><script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/19/9/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/19/9/marker.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/19/9/overlay.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/19/9/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/19/9/controls.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&amp;1m2&amp;1d-24.953599819921862&amp;2d-48.297289974042314&amp;2m2&amp;1d-22.45823983792968&amp;2d-44.031029359668594&amp;2u10&amp;4sen-US&amp;5e0&amp;6sm%40291000000&amp;7b0&amp;8e0&amp;9b0&amp;callback=_xdc_._fyvora&amp;token=19686"></script><script type="text/javascript" charset="UTF-8" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i10!2i378!3i579!1m4!1m3!1i10!2i379!3i579!1m4!1m3!1i10!2i378!3i580!1m4!1m3!1i10!2i378!3i581!1m4!1m3!1i10!2i379!3i580!1m4!1m3!1i10!2i379!3i581!1m4!1m3!1i10!2i378!3i582!1m4!1m3!1i10!2i379!3i582!1m4!1m3!1i10!2i380!3i579!1m4!1m3!1i10!2i381!3i579!1m4!1m3!1i10!2i382!3i579!1m4!1m3!1i10!2i380!3i580!1m4!1m3!1i10!2i380!3i581!1m4!1m3!1i10!2i381!3i580!1m4!1m3!1i10!2i381!3i581!1m4!1m3!1i10!2i380!3i582!1m4!1m3!1i10!2i381!3i582!1m4!1m3!1i10!2i382!3i580!1m4!1m3!1i10!2i382!3i581!1m4!1m3!1i10!2i382!3i582!2m3!1e0!2sm!3i291000000!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e3&amp;callback=_xdc_._rl334z&amp;token=110506"></script><script type="text/javascript" charset="UTF-8" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i10!2i378!3i579!1m4!1m3!1i10!2i379!3i579!1m4!1m3!1i10!2i378!3i580!1m4!1m3!1i10!2i378!3i581!1m4!1m3!1i10!2i379!3i580!1m4!1m3!1i10!2i379!3i581!1m4!1m3!1i10!2i378!3i582!1m4!1m3!1i10!2i379!3i582!1m4!1m3!1i10!2i380!3i579!1m4!1m3!1i10!2i381!3i579!1m4!1m3!1i10!2i382!3i579!1m4!1m3!1i10!2i380!3i580!1m4!1m3!1i10!2i380!3i581!1m4!1m3!1i10!2i381!3i580!1m4!1m3!1i10!2i381!3i581!1m4!1m3!1i10!2i380!3i582!1m4!1m3!1i10!2i381!3i582!1m4!1m3!1i10!2i382!3i580!1m4!1m3!1i10!2i382!3i581!1m4!1m3!1i10!2i382!3i582!2m3!1e0!2sm!3i291032421!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e3&amp;callback=_xdc_._b95qrk&amp;token=56411"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/QuotaService.RecordEvent?1shttps%3A%2F%2Fconta.nubank.com.br%2F%23%2Flogin&amp;4e1&amp;5e0&amp;6u1&amp;7su1bxqn&amp;callback=_xdc_._9h21fz&amp;token=73686"></script></head>
+  <body class="f-topbar-fixed">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/2.3.0/es5-shim.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.0/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- Add your site or application content here. -->
+    <navigation-base><!-- ngIf: menuDisplay --><navigation-menu customer="customer" account="account" ng-if="menuDisplay" class="ng-scope ng-isolate-scope"><div class="fixed header-menu">
+  <nav class="top-bar" data-topbar="">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#transactions"><span class="sprite nu-sprite-logo"></span></a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon">
+        <a href=""><span>Menu</span></a>
+      </li>
+    </ul>
+
+
+  <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right nu-side-menu">
+        <li class="has-dropdown support not-click">
+          <a class="support-title">Atendimento</a>
+          <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+            <li><a href="tel:08008871595">0800 887 1595</a></li>
+            <li><a class="nu-support-action" href="mailto:meajuda@nubank.com.br">meajuda@nubank.com.br</a></li>
+            <li><a href="http://www.nubank.com.br/perguntas/" target="_blank">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="limit">
+          <div class="limitbar">
+  <table class="labels">
+    <tbody>
+      <!-- ngIf: balances.future --><tr class="portion future ng-scope" ng-click="" ng-if="balances.future" style="height: 19.0672%">
+        <th class="info">
+          <span class="label"> Faturas Futuras
+            <span class="amount ng-binding">R$953,36</span>
+          </span>
+        </th>
+      </tr><!-- end ngIf: balances.future -->
+      <!-- ngIf: balances.open --><tr class="portion open ng-scope" ng-if="balances.open" style="height: 15.3348%">
+        <th class="info">
+          <a class="label" href="/#/bills" ng-click="highlightBills()">Fatura Atual
+            <span class="amount ng-binding">R$766,74</span>
+          </a>
+        </th>
+      </tr><!-- end ngIf: balances.open -->
+      <!-- ngIf: balances.due --><tr class="portion due ng-scope" ng-if="balances.due" style="height: 14.557%">
+        <th class="info">
+          <a class="label" href="/#/bills">Fatura Fechada
+            <span class="amount ng-binding">R$727,85</span>
+          </a>
+          <a href="/#/bills" ng-click="highlightBills()" id="nu-bill-pay" class="nu-button micro stroke">Disponível para pagar</a>
+        </th>
+      </tr><!-- end ngIf: balances.due -->
+      <!-- ngIf: balances.prepaid -->
+      <!-- ngIf: balances.available --><tr class="portion available ng-scope" ng-if="balances.available" style="height: 51.041%">
+        <th class="info">
+          <span class="label">Limite Disponível
+            <span class="amount ng-binding">R$2552,05</span>
+          </span>
+        </th>
+      </tr><!-- end ngIf: balances.available -->
+    </tbody>
+  </table>
+  <div class="bar">
+    <!-- ngIf: balances.future --><div class="future ng-scope" ng-if="balances.future" style="height: 19.0672%"></div><!-- end ngIf: balances.future -->
+    <!-- ngIf: balances.open --><div class="open ng-scope" ng-if="balances.open" style="height: 15.3348%"></div><!-- end ngIf: balances.open -->
+    <!-- ngIf: balances.due --><div class="due ng-scope" ng-if="balances.due" style="height: 14.557%"></div><!-- end ngIf: balances.due -->
+    <!-- ngIf: balances.prepaid -->
+    <!-- ngIf: balances.available --><div class="available ng-scope" ng-if="balances.available" style="height: 51.041%"></div><!-- end ngIf: balances.available -->
+  </div>
+</div>
+        </li>
+        <li class="has-dropdown profile-menu ng-isolate-scope not-click" account="account" name="customer.name"><a class="menu-item profile-title ng-binding"> de  </a><ul class="dropdown profile-card"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="profile-link"><a class="my-account" href="#profile">Minha conta</a></li><li><a ng-click="logout()" class="logout">Sair</a></li><li class="last-transaction"><h4>última transação</h4><tx-latest class="ng-isolate-scope"><p class="last-tx"><span class="time ng-binding">06 fevereiro</span><br><span class="merchant ng-binding">Gandi Lu - Ux</span><br><!-- ngIf: tx.amount --><span class="amount ng-binding ng-scope" ng-if="tx.amount">R$106,11</span><!-- end ngIf: tx.amount --></p></tx-latest></li><li class="block"><card-block account="account" class="ng-isolate-scope"><a class="locker active" ng-class="lockerClass" ng-click="cardLocker(!lockStatus)"></a><a class="nu-button stroke mini ng-binding" ng-click="cardLocker(!lockStatus)">bloquear cartão</a><span class="card-block-error" style="display: none;">Houve um erro, por favor, tente novamente.</span></card-block></li></ul></li>
+      </ul>
+
+      <ul class="left nu-menu">
+        <li class="active-item"><a class="menu-item transactions" href="#transactions">Transações</a></li>
+        <li><a class="menu-item bills" href="#bills">Faturas</a></li>
+      </ul>
+    </section></nav>
+</div></navigation-menu><!-- end ngIf: menuDisplay -->
+<div class="appbody">
+  <div class="nu-views" ng-transclude="">
+        <!-- ngView:  --><main ng-view="" class="ng-scope"><section class="nu-view tabbed bills ng-scope">
+    <!-- ngIf: account --><bill-browser account="account" ng-if="account" class="ng-scope ng-isolate-scope"><div class="bills-browser">
+  <md-tabs class="nu ng-isolate-scope md-default-theme" md-selected="selectedIndex" md-stretch-tabs="always" role="tablist"><section class="md-header" ng-class="{'md-paginating': pagination.active}"><!-- ngIf: pagination.active && pagination.hasPrev --><div class="md-header-items-container" md-tabs-pagination=""><div class="md-header-items" style="-webkit-transform: translate3d(0px, 0px, 0px); "><md-tabs-ink-bar></md-tabs-ink-bar>
+
+    <!-- ngRepeat: bill in bills | orderBy:'summary.due_date' --><md-tab ng-repeat="bill in bills | orderBy:'summary.due_date'" class="ng-scope ng-isolate-scope" id="tab_002" role="tab" tabindex="-1" aria-controls="content_tab_002" style="-webkit-user-drag: none; " aria-selected="false"><md-tab-label class="tab overdue">
+        <h3 class="period ng-binding">Nov 14 </h3>
+        <span class="amount ng-binding">R$794,25</span>
+      </md-tab-label></md-tab><!-- end ngRepeat: bill in bills | orderBy:'summary.due_date' --><md-tab ng-repeat="bill in bills | orderBy:'summary.due_date'" class="ng-scope ng-isolate-scope" id="tab_003" role="tab" tabindex="-1" aria-controls="content_tab_003" style="-webkit-user-drag: none; "><md-tab-label class="tab overdue">
+        <h3 class="period ng-binding">Dez 14 </h3>
+        <span class="amount ng-binding">R$60,99</span>
+      </md-tab-label></md-tab><!-- end ngRepeat: bill in bills | orderBy:'summary.due_date' --><md-tab ng-repeat="bill in bills | orderBy:'summary.due_date'" class="ng-scope ng-isolate-scope" id="tab_004" role="tab" tabindex="-1" aria-controls="content_tab_004" style="-webkit-user-drag: none; "><md-tab-label class="tab overdue">
+        <h3 class="period ng-binding">Jan </h3>
+        <span class="amount ng-binding">R$821,62</span>
+      </md-tab-label></md-tab><!-- end ngRepeat: bill in bills | orderBy:'summary.due_date' --><md-tab ng-repeat="bill in bills | orderBy:'summary.due_date'" class="ng-scope ng-isolate-scope active" id="tab_005" role="tab" tabindex="0" aria-controls="content_tab_005" style="-webkit-user-drag: none; " aria-selected="true"><md-tab-label class="tab closed">
+        <h3 class="period ng-binding">Fev </h3>
+        <span class="amount ng-binding">R$727,85</span>
+      </md-tab-label></md-tab><!-- end ngRepeat: bill in bills | orderBy:'summary.due_date' --><md-tab ng-repeat="bill in bills | orderBy:'summary.due_date'" class="ng-scope ng-isolate-scope" id="tab_006" role="tab" tabindex="-1" aria-controls="content_tab_006" style="-webkit-user-drag: none; "><md-tab-label class="tab open">
+        <h3 class="period ng-binding">Mar </h3>
+        <span class="amount ng-binding">R$766,74</span>
+      </md-tab-label></md-tab><!-- end ngRepeat: bill in bills | orderBy:'summary.due_date' --><md-tab ng-repeat="bill in bills | orderBy:'summary.due_date'" class="ng-scope ng-isolate-scope" id="tab_007" role="tab" tabindex="-1" aria-controls="content_tab_007" style="-webkit-user-drag: none; "><md-tab-label class="tab future">
+        <h3 class="period ng-binding">Abr </h3>
+        <span class="amount ng-binding">R$476,68</span>
+      </md-tab-label></md-tab><!-- end ngRepeat: bill in bills | orderBy:'summary.due_date' --><md-tab ng-repeat="bill in bills | orderBy:'summary.due_date'" class="ng-scope ng-isolate-scope" id="tab_008" role="tab" tabindex="-1" aria-controls="content_tab_008" style="-webkit-user-drag: none; "><md-tab-label class="tab future">
+        <h3 class="period ng-binding">Mai </h3>
+        <span class="amount ng-binding">R$476,68</span>
+      </md-tab-label></md-tab><!-- end ngRepeat: bill in bills | orderBy:'summary.due_date' --></div></div><!-- ngIf: pagination.active && pagination.hasNext --></section><section class="md-tabs-content" style="height: 602px; "><div class="md-tab-content ng-scope ng-hide" style="-webkit-user-drag: none; " id="content_tab_002" role="tabpanel" aria-labelledby="tab_002">
+
+
+
+      <set-current state="bill.state" index="$index" class="ng-isolate-scope"></set-current>
+
+      <div class="row" resizable="">
+        <div class="summary medium-4 column overdue" ng-class="bill.state" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="amount-due">
+            <div class="cell">
+              <div class="amount ng-binding">R$794,25</div>
+              <div class="due">Vencimento <span class="date ng-binding">10 Nov</span></div>
+              <!-- ngIf: bill.state == 'open' -->
+              <!-- ngIf: bill.state == 'future' -->
+            </div>
+          </div>
+          <ul>
+            <!-- ngIf: bill.state == 'open' || bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance > 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance < 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.interest && bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.paid && bill.summary.paid > 0 && bill.state == 'overdue' --><li class="paid group ng-scope" ng-if="bill.summary.paid &amp;&amp; bill.summary.paid &gt; 0 &amp;&amp; bill.state == 'overdue'">
+              <div class="label">Pagamento recebido</div>
+              <div class="amount positive ng-binding">R$794,25</div>
+            </li><!-- end ngIf: bill.summary.paid && bill.summary.paid > 0 && bill.state == 'overdue' -->
+            <!-- ngIf: bill.summary.paid == 0 && bill.total_balance > 0 && bill.state == 'overdue' -->
+          </ul>
+          <!-- ngIf: bill.state == 'closed' || bill.state == 'open' -->
+        </div>
+
+        <div class="charges medium-8 column" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="period"> De <span class="date ng-binding">23 Set</span> até <span class="date ng-binding">29 Out</span></div>
+          <div class="currency_label">Valores em R$</div>
+          <!-- ngIf: bill.loaded -->
+        </div>
+
+      </div>
+
+
+</div><div class="md-tab-content ng-hide ng-scope" style="-webkit-user-drag: none; " id="content_tab_003" role="tabpanel" aria-labelledby="tab_003">
+
+
+
+      <set-current state="bill.state" index="$index" class="ng-isolate-scope"></set-current>
+
+      <div class="row" resizable="">
+        <div class="summary medium-4 column overdue" ng-class="bill.state" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="amount-due">
+            <div class="cell">
+              <div class="amount ng-binding">R$60,99</div>
+              <div class="due">Vencimento <span class="date ng-binding">10 Dez</span></div>
+              <!-- ngIf: bill.state == 'open' -->
+              <!-- ngIf: bill.state == 'future' -->
+            </div>
+          </div>
+          <ul>
+            <!-- ngIf: bill.state == 'open' || bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance > 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance < 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.interest && bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.paid && bill.summary.paid > 0 && bill.state == 'overdue' --><li class="paid group ng-scope" ng-if="bill.summary.paid &amp;&amp; bill.summary.paid &gt; 0 &amp;&amp; bill.state == 'overdue'">
+              <div class="label">Pagamento recebido</div>
+              <div class="amount positive ng-binding">R$60,99</div>
+            </li><!-- end ngIf: bill.summary.paid && bill.summary.paid > 0 && bill.state == 'overdue' -->
+            <!-- ngIf: bill.summary.paid == 0 && bill.total_balance > 0 && bill.state == 'overdue' -->
+          </ul>
+          <!-- ngIf: bill.state == 'closed' || bill.state == 'open' -->
+        </div>
+
+        <div class="charges medium-8 column" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="period"> De <span class="date ng-binding">29 Out</span> até <span class="date ng-binding">28 Nov</span></div>
+          <div class="currency_label">Valores em R$</div>
+          <!-- ngIf: bill.loaded --><div class="charges-list ng-scope ng-isolate-scope" bill="bill" ng-if="bill.loaded"><!-- ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">03 Nov</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">IOF de "Amazon Web Services" <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">0,22</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">05 Nov</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Amazon Web Services <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">3,38</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">05 Nov</span></div></div><div class="charge-data credit" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Pagamento recebido <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">-794,25</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">10 Nov</span></div></div><div class="charge-data credit" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Credito Variacao Cambial <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">-1,36</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">25 Nov</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">IOF de "Gh Github Com 5xib" <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">1,17</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">26 Nov</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">IOF de "Amazon Services Kindle" <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">1,34</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">27 Nov</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Netflix Com <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">16,90</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">27 Nov</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Amazon Services Kindle <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">20,93</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">27 Nov</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Gh Github Com 5xib <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">18,41</div></div></div><!-- end ngRepeat: charge in charges --></div><!-- end ngIf: bill.loaded -->
+        </div>
+
+      </div>
+
+
+</div><div class="md-tab-content ng-hide ng-scope" style="-webkit-user-drag: none; " id="content_tab_004" role="tabpanel" aria-labelledby="tab_004">
+
+
+
+      <set-current state="bill.state" index="$index" class="ng-isolate-scope"></set-current>
+
+      <div class="row" resizable="">
+        <div class="summary medium-4 column overdue" ng-class="bill.state" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="amount-due">
+            <div class="cell">
+              <div class="amount ng-binding">R$821,62</div>
+              <div class="due">Vencimento <span class="date ng-binding">10 Jan</span></div>
+              <!-- ngIf: bill.state == 'open' -->
+              <!-- ngIf: bill.state == 'future' -->
+            </div>
+          </div>
+          <ul>
+            <!-- ngIf: bill.state == 'open' || bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance > 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance < 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.interest && bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.paid && bill.summary.paid > 0 && bill.state == 'overdue' --><li class="paid group ng-scope" ng-if="bill.summary.paid &amp;&amp; bill.summary.paid &gt; 0 &amp;&amp; bill.state == 'overdue'">
+              <div class="label">Pagamento recebido</div>
+              <div class="amount positive ng-binding">R$821,62</div>
+            </li><!-- end ngIf: bill.summary.paid && bill.summary.paid > 0 && bill.state == 'overdue' -->
+            <!-- ngIf: bill.summary.paid == 0 && bill.total_balance > 0 && bill.state == 'overdue' -->
+          </ul>
+          <!-- ngIf: bill.state == 'closed' || bill.state == 'open' -->
+        </div>
+
+        <div class="charges medium-8 column" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="period"> De <span class="date ng-binding">28 Nov</span> até <span class="date ng-binding">30 Dez</span></div>
+          <div class="currency_label">Valores em R$</div>
+          <!-- ngIf: bill.loaded -->
+        </div>
+
+      </div>
+
+
+</div><div class="md-tab-content ng-scope" style="-webkit-user-drag: none; " id="content_tab_005" role="tabpanel" aria-labelledby="tab_005">
+
+
+
+      <set-current state="bill.state" index="$index" class="ng-isolate-scope"></set-current>
+
+      <div class="row" resizable="">
+        <div class="summary medium-4 column closed" ng-class="bill.state" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="amount-due">
+            <div class="cell">
+              <div class="amount ng-binding">R$727,85</div>
+              <div class="due">Vencimento <span class="date ng-binding">10 Fev</span></div>
+              <!-- ngIf: bill.state == 'open' -->
+              <!-- ngIf: bill.state == 'future' -->
+            </div>
+          </div>
+          <ul>
+            <!-- ngIf: bill.state == 'open' || bill.state == 'closed' --><li class="total group ng-scope" ng-if="bill.state == 'open' || bill.state == 'closed'">
+              <div class="label">Gastos do mês</div>
+              <div class="amount ng-binding">R$727,85
+              </div>
+            </li><!-- end ngIf: bill.state == 'open' || bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance > 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance < 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.interest && bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.paid && bill.summary.paid > 0 && bill.state == 'overdue' -->
+            <!-- ngIf: bill.summary.paid == 0 && bill.total_balance > 0 && bill.state == 'overdue' -->
+          </ul>
+          <!-- ngIf: bill.state == 'closed' || bill.state == 'open' --><button class="nu-button stroke ng-scope" ng-if="bill.state == 'closed' || bill.state == 'open'" ng-click="showBillBarcode(bill)">
+            Gerar boleto
+          </button><!-- end ngIf: bill.state == 'closed' || bill.state == 'open' -->
+        </div>
+
+        <div class="charges medium-8 column" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="period"> De <span class="date ng-binding">30 Dez</span> até <span class="date ng-binding">28 Jan</span></div>
+          <div class="currency_label">Valores em R$</div>
+          <!-- ngIf: bill.loaded --><div class="charges-list ng-scope ng-isolate-scope" bill="bill" ng-if="bill.loaded"><!-- ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">03 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">IOF de "Amazon Web Services" <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">0,23</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">05 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">IOF de "Paypal Godaddy Com" <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">2,41</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">06 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Amazon Web Services <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">3,67</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">07 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Paypal Godaddy Com <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">37,82</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">12 Jan</span></div></div><div class="charge-data credit" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Pagamento recebido <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">-821,62</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">12 Jan</span></div></div><div class="charge-data credit" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Credito Variacao Cambial <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">-2,40</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">13 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Mercadopago Mlivre <!-- ngIf: charge.charges > 1 --><em ng-if="charge.charges &gt; 1" class="ng-binding ng-scope">2/3</em><!-- end ngIf: charge.charges > 1 --></div><div class="amount ng-binding">63,79</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">16 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">The Hunch Box <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">110,00</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">19 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">IOF de "Apl Itunes Com Bill" <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">1,73</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">21 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Mercadopago Mlivre <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">287,40</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">21 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Apl Itunes Com Bill <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">27,17</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">24 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">IOF de "Gum Co Cc" <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">0,86</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">25 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">IOF de "Gh Github Com 5xib" <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">1,20</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">25 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">IOF de "Apl Itunes Com Bill" <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">1,72</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">27 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Gh Github Com 5xib <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">18,83</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">27 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Netflix Com <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">16,90</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">27 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Gum Co Cc <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">13,45</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">28 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Apl Itunes Com Bill <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">26,97</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">28 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">A Apple Online Store B <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">116,10</div></div></div><!-- end ngRepeat: charge in charges --></div><!-- end ngIf: bill.loaded -->
+        </div>
+
+      </div>
+
+
+</div><div class="md-tab-content ng-hide ng-scope" style="-webkit-user-drag: none; " id="content_tab_006" role="tabpanel" aria-labelledby="tab_006">
+
+
+
+      <set-current state="bill.state" index="$index" class="ng-isolate-scope"></set-current>
+
+      <div class="row" resizable="">
+        <div class="summary medium-4 column open" ng-class="bill.state" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="amount-due">
+            <div class="cell">
+              <div class="amount ng-binding">R$766,74</div>
+              <div class="due">Vencimento <span class="date ng-binding">10 Mar</span></div>
+              <!-- ngIf: bill.state == 'open' --><div class="detail ng-scope" ng-if="bill.state == 'open'">Fechamento em <span class="date ng-binding">25 Fev</span></div><!-- end ngIf: bill.state == 'open' -->
+              <!-- ngIf: bill.state == 'future' -->
+            </div>
+          </div>
+          <ul>
+            <!-- ngIf: bill.state == 'open' || bill.state == 'closed' --><li class="total group ng-scope" ng-if="bill.state == 'open' || bill.state == 'closed'">
+              <div class="label">Gastos do mês</div>
+              <div class="amount ng-binding">R$766,74
+              </div>
+            </li><!-- end ngIf: bill.state == 'open' || bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance > 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance < 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.interest && bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.paid && bill.summary.paid > 0 && bill.state == 'overdue' -->
+            <!-- ngIf: bill.summary.paid == 0 && bill.total_balance > 0 && bill.state == 'overdue' -->
+          </ul>
+          <!-- ngIf: bill.state == 'closed' || bill.state == 'open' --><button class="nu-button stroke ng-scope" ng-if="bill.state == 'closed' || bill.state == 'open'" ng-click="showBillBarcode(bill)">
+            Gerar boleto
+          </button><!-- end ngIf: bill.state == 'closed' || bill.state == 'open' -->
+        </div>
+
+        <div class="charges medium-8 column" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="period"> De <span class="date ng-binding">28 Jan</span> até <span class="date ng-binding">25 Fev</span></div>
+          <div class="currency_label">Valores em R$</div>
+          <!-- ngIf: bill.loaded --><div class="charges-list ng-scope ng-isolate-scope" bill="bill" ng-if="bill.loaded"><!-- ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">30 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Mercadopago Mlivre <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">100,00</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">31 Jan</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Mercadopago <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">20,00</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">02 Fev</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Gandi Lu - Ux <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">2,80</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">02 Fev</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">IOF de "Amazon Web Services" <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">0,22</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">04 Fev</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Amazon Web Services <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">3,50</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">05 Fev</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding"> Brasil <!-- ngIf: charge.charges > 1 --><em ng-if="charge.charges &gt; 1" class="ng-binding ng-scope">1/3</em><!-- end ngIf: charge.charges > 1 --></div><div class="amount ng-binding">476,68</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">06 Fev</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Gandi Lu - Ux <!-- ngIf: charge.charges > 1 --></div><div class="amount ng-binding">99,75</div></div></div><!-- end ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">13 Fev</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding">Mercadopago Mlivre <!-- ngIf: charge.charges > 1 --><em ng-if="charge.charges &gt; 1" class="ng-binding ng-scope">3/3</em><!-- end ngIf: charge.charges > 1 --></div><div class="amount ng-binding">63,79</div></div></div><!-- end ngRepeat: charge in charges --></div><!-- end ngIf: bill.loaded -->
+        </div>
+
+      </div>
+
+
+</div><div class="md-tab-content ng-hide ng-scope" style="-webkit-user-drag: none; " id="content_tab_007" role="tabpanel" aria-labelledby="tab_007">
+
+
+
+      <set-current state="bill.state" index="$index" class="ng-isolate-scope"></set-current>
+
+      <div class="row" resizable="">
+        <div class="summary medium-4 column future" ng-class="bill.state" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="amount-due">
+            <div class="cell">
+              <div class="amount ng-binding">R$476,68</div>
+              <div class="due">Vencimento <span class="date ng-binding">10 Abr</span></div>
+              <!-- ngIf: bill.state == 'open' -->
+              <!-- ngIf: bill.state == 'future' --><div class="detail ng-scope" ng-if="bill.state == 'future'">Fatura Parcial</div><!-- end ngIf: bill.state == 'future' -->
+            </div>
+          </div>
+          <ul>
+            <!-- ngIf: bill.state == 'open' || bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance > 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance < 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.interest && bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.paid && bill.summary.paid > 0 && bill.state == 'overdue' -->
+            <!-- ngIf: bill.summary.paid == 0 && bill.total_balance > 0 && bill.state == 'overdue' -->
+          </ul>
+          <!-- ngIf: bill.state == 'closed' || bill.state == 'open' -->
+        </div>
+
+        <div class="charges medium-8 column" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="period"> De <span class="date ng-binding">25 Fev</span> até <span class="date ng-binding">27 Mar</span></div>
+          <div class="currency_label">Valores em R$</div>
+          <!-- ngIf: bill.loaded --><div class="charges-list ng-scope ng-isolate-scope" bill="bill" ng-if="bill.loaded"><!-- ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">05 Mar</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding"> Brasil <!-- ngIf: charge.charges > 1 --><em ng-if="charge.charges &gt; 1" class="ng-binding ng-scope">2/3</em><!-- end ngIf: charge.charges > 1 --></div><div class="amount ng-binding">476,68</div></div></div><!-- end ngRepeat: charge in charges --></div><!-- end ngIf: bill.loaded -->
+        </div>
+
+      </div>
+
+
+</div><div class="md-tab-content ng-hide ng-scope" style="-webkit-user-drag: none; " id="content_tab_008" role="tabpanel" aria-labelledby="tab_008">
+
+
+
+      <set-current state="bill.state" index="$index" class="ng-isolate-scope"></set-current>
+
+      <div class="row" resizable="">
+        <div class="summary medium-4 column future" ng-class="bill.state" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="amount-due">
+            <div class="cell">
+              <div class="amount ng-binding">R$476,68</div>
+              <div class="due">Vencimento <span class="date ng-binding">10 Mai</span></div>
+              <!-- ngIf: bill.state == 'open' -->
+              <!-- ngIf: bill.state == 'future' --><div class="detail ng-scope" ng-if="bill.state == 'future'">Fatura Parcial</div><!-- end ngIf: bill.state == 'future' -->
+            </div>
+          </div>
+          <ul>
+            <!-- ngIf: bill.state == 'open' || bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance > 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.past_balance && bill.summary.past_balance < 0 && (bill.state == 'open' || bill.state == 'closed') -->
+            <!-- ngIf: bill.summary.interest && bill.state == 'closed' -->
+            <!-- ngIf: bill.summary.paid && bill.summary.paid > 0 && bill.state == 'overdue' -->
+            <!-- ngIf: bill.summary.paid == 0 && bill.total_balance > 0 && bill.state == 'overdue' -->
+          </ul>
+          <!-- ngIf: bill.state == 'closed' || bill.state == 'open' -->
+        </div>
+
+        <div class="charges medium-8 column" ng-style="tabContentStyle" style="height: 602px; ">
+          <div class="period"> De <span class="date ng-binding">27 Mar</span> até <span class="date ng-binding">27 Abr</span></div>
+          <div class="currency_label">Valores em R$</div>
+          <!-- ngIf: bill.loaded --><div class="charges-list ng-scope ng-isolate-scope" bill="bill" ng-if="bill.loaded"><!-- ngRepeat: charge in charges --><div class="charge ng-scope" ng-repeat="charge in charges"><div class="time"><div class="cell"><span class="date ng-binding">05 Abr</span></div></div><div class="charge-data" ng-class="isCharge(charge.amount)"><div class="description ng-binding"> Brasil <!-- ngIf: charge.charges > 1 --><em ng-if="charge.charges &gt; 1" class="ng-binding ng-scope">3/3</em><!-- end ngIf: charge.charges > 1 --></div><div class="amount ng-binding">476,68</div></div></div><!-- end ngRepeat: charge in charges --></div><!-- end ngIf: bill.loaded -->
+        </div>
+
+      </div>
+
+
+</div></section></md-tabs></div>
+
+<script type="text/ng-template" id="bill-barcode.template.html">
+  <a class="modal-close" ng-click="hideBillBarcode()">fechar</a>
+  <div class="boleto-modal">
+    <div class="summary row collapse">
+      <div class="medium-6 column">
+        <div class="label">Vencimento</div>
+        <div class="due-date">{{bill.summary.due_date | full_date}}</div>
+      </div>
+      <div class="medium-6 column">
+        <div class="label">Valor total</div>
+        <div class="amount">{{bill.summary.total_balance/100 | currency}}</div>
+      </div>
+    </div>
+
+    <div class="boleto row collapse">
+      <div class="label">Boleto com valor total</div>
+      <div class="barcode" ng-show="barcode(bill)">
+        <span class="barcode-number">{{bill.more.linha_digitavel}}</span>
+        <img class="barcode-code" id="barcode-{{bill.more.barcode}}"/>
+      </div>
+    </div>
+    <div class="send-email row collapse">
+      <div class="label">Escolher valor de pagamento</div>
+      <div class="row collapse">
+       <div class="medium-6 column">
+         <div class="amount"><input type="text" class="boleto-amount" id="boleto-amount" value="{{bill.summary.total_balance/100 | number:2}}"/></div>
+         <div class="detail">Mínimo de {{ bill.summary.minimum_payment/100 | currency}}</div>
+       </div>
+       <div class="medium-6 column">
+        <a class="nu-button full-width" ng-click="getBoleto(bill)">Enviar por e-mail</a>
+        <div class="toast-boleto-sent">Boleto enviado por e-mail</div>
+       </div>
+      </div>
+    </div>
+  </div>
+</script></bill-browser><!-- end ngIf: account -->
+</section></main>
+    </div>
+</div>
+<div id="loaderDiv" loader="" style="display: none; ">
+  <div class="spinner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+  </div>
+</div></navigation-base>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+
+    <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script><script src="https://maps.gstatic.com/maps-api-v3/api/js/19/9/main.js"></script>
+
+    <script src="config/config.js"></script>
+
+    <script src="scripts/13cdc084.modules.js"></script>
+
+    <script src="scripts/3164b5c3.scripts.js"></script>
+
+    <script>
+
+      (function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+       for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+    </script>
+
+
+<span style="left: -999px; top: -999px; visibility: hidden; position: absolute; font-size: 300px; width: auto; height: auto; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-family: Roboto, Arial, sans-serif; ">BESbewy</span></body></html>
