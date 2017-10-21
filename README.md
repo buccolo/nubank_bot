@@ -48,10 +48,6 @@ bot_response[:credit].each do |transactions|
 end
 ```
 
-## Porque postar para uma URL?
-Estou fazendo o [Grana.io](https://grana.io), um serviço pra gerenciar minhas finanças automagicamente. Quer ser [beta tester?](mailto:bruno.buccolo+grana@gmail.com?subject=BETA&body=seu@email.com)
-![](http://cl.ly/image/3w2v1i1M463a/687474703a2f2f636c2e6c792f696d6167652f30713069336c33673235326e2f53637265656e25323053686f74253230323031352d30322d3035253230617425323031312e35302e3036253230504d2e706e67.png)
-
 ## LICENSE
 
 The MIT License
